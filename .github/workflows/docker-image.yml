@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag giacomolevrini/web_server
     - name : Push the image to DockerHub
-      run: docker login -u giacomolevrini -p ${{ secrets.DOCKER_TOKER }} && docker run giacomolevrini/web_server
+      run: docker login -u giacomolevrini -p ${{ secrets.DOCKER_TOKEn }} && docker run giacomolevrini/web_server
     
